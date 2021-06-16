@@ -33,7 +33,6 @@ assert zlib_ng_decomp == zlib_decomp
 
 **Requirements:**
 
--   rust-toolchain (i.e cargo, rustc)
 -   python3-dev or python3-devel
 
 **building and installing**
