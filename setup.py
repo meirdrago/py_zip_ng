@@ -11,9 +11,9 @@ setup(
     name="py_zip_ng",
     version="0.1.0",
     rust_extensions=[RustExtension("py_zip_ng", binding=Binding.PyO3)],
-    packages=["."],
+    packages=["py_zip_ng"],
     include_package_data=True,
-    package_dir={'.': '.'},
-    package_data={'.': ['libz.so.1.2.11.zlib-ng']},
+    package_dir={'py_zip_ng': '.'},
+    package_data={'py_zip_ng': ['libz.so.1.2.11.zlib-ng']},
     zip_safe=False,
 )
