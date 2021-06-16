@@ -1,0 +1,17 @@
+[package]
+name = "py-zip-ng"
+version = "0.1.0"
+authors = ["meir <meirdrago@gmail.com>"]
+edition = "2018"
+
+
+[dependencies]
+flate2 = { version = "1.0.17", features = ["zlib-ng-compat"], default-features = false }
+pyo3 = {version = "0.13.2", features = ["extension-module"]}
+log = "*"
+pyo3-log = "0.3.1"
+
+[lib]
+name = "py_zip_ng"
+crate-type = ["cdylib"]
+

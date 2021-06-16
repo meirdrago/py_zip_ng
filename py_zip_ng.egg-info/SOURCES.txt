@@ -1,0 +1,13 @@
+Cargo.toml
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+./test.py
+py_zip_ng/__init__.py
+py_zip_ng.egg-info/PKG-INFO
+py_zip_ng.egg-info/SOURCES.txt
+py_zip_ng.egg-info/dependency_links.txt
+py_zip_ng.egg-info/not-zip-safe
+py_zip_ng.egg-info/top_level.txt
+src/lib.rs
