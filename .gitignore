@@ -3,3 +3,5 @@ Cargo.lock
 build/
 dist/
 target/
+__pycache__
+*/__pycache__
