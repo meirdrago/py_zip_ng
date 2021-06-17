@@ -36,7 +36,6 @@ try:
     zlib.decompress(s)
     assert False
 except Exception as e:
-    print(e)
     assert True
 
 print("OK")
