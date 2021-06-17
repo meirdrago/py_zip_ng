@@ -23,6 +23,4 @@ def set_libz_ng_env_param():
 
 set_libz_ng_env_param()
 
-print_background_lib()
-
 from .py_zip_ng import *

@@ -1,5 +1,15 @@
-import py_zip_ng
+import os
+import platform
+
+if platform.system().lower() != "windows":
+    import py_zip_ng
+else:
+    import zlib as py_zip_ng
+
 import zlib
+
+if os.path.exists(os.environ.get('LD_PRELOAD', '')):
+    print("\033[92m[py_zip_ng background library:\033[0m   {}]".format(os.environ.get('LD_PRELOAD', '')))
 
 
 assert py_zip_ng.MAX_WBITS == zlib.MAX_WBITS
@@ -18,11 +28,16 @@ assert zlib_ng_decomp == zlib_decomp
 # errors
 try:
     py_zip_ng.decompress(s)
+    assert False
 except Exception as e:
-    print(e)
+    assert True
 
 try:
     zlib.decompress(s)
+    assert False
 except Exception as e:
     print(e)
+    assert True
+
+print("OK")
 
